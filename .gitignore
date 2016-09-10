@@ -49,3 +49,4 @@ WebContent/.metadata/*
 .settings/*
 WebContent/RemoteSystems*/*
 WebContent/res/js/script.min.js
+/.idea/*
