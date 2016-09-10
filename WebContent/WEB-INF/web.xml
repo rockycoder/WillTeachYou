@@ -53,11 +53,7 @@
  	   <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	     
- <listener>
-    <listener-class>com.app.listner.TryKaroHttpSessionListener</listener-class>
-</listener>
-
-	
+ 	
    <servlet>
       <servlet-name>web</servlet-name>
       <servlet-class>

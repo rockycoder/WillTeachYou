@@ -94,9 +94,11 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 		</property>
 		<property name="annotatedClasses">
 			<list>
-				<value>com.app.pojo.ClassRoom</value>
-				
-
+				<value>com.app.pojo.Company</value>
+				<value>com.app.pojo.Student</value>
+				<value>com.app.pojo.Tutor</value>
+				<value>com.app.pojo.Volunteer</value>
+				<value>com.app.pojo.User</value>
 			</list>
 		</property>
 	</bean>

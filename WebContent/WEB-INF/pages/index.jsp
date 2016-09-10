@@ -4,22 +4,6 @@
 <meta name="title"
 	content="">
 </head>
-<script>
-	$(document).ready(function() {
-
-		$.blockUI({
-			message : $('.popup')
-		});
-
-		// ----- CLOSE
-		$('[data-popup-close]').on('click', function(e) {
-			$.unblockUI();
-			$.reset();
-		});
-
-	});
-</script>
-
 
 <body class="body-class">
 	<!-- LOADING -->
@@ -77,14 +61,7 @@
 			</div>
 			<!-- Left and right controls -->
 		</div>
-		<!-- 		<div class="benefits-container container" style="padding-top: 10px;">
-			<div class="heading-tabs _1  text-center">
-				<ul>
-					<li><a href="#featured" data-toggle="tab"
-						style="cursor: context-menu; color: black;">How It Works</a></li>
-				</ul>
-			</div>
-		</div> -->
+		
 		<section class="benefits-wrapper scrolldown body-part">
 			<div class="benefits-container container">
 				<div class="heading-tabs _1  text-center">

@@ -12,15 +12,16 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-
 @Entity
-@Table(name = "Tutor")
-public class Tutor implements Serializable{
+@Table(name = "Volunteer")
+public class Volunteer implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+
 	private int id;
     private String expertise;
     private Date start;
@@ -28,8 +29,9 @@ public class Tutor implements Serializable{
     private String location;
     private User user;
     
-	@Id
-	@GeneratedValue (strategy = GenerationType.AUTO)
+    
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
 	public int getId() {
 		return id;
 	}
@@ -60,7 +62,7 @@ public class Tutor implements Serializable{
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	
+
 	@ManyToOne( fetch = FetchType.LAZY, cascade = CascadeType.ALL )
 	public User getUser() {
 		return user;
@@ -68,7 +70,7 @@ public class Tutor implements Serializable{
 	public void setUser(User user) {
 		this.user = user;
 	}
-	public Tutor(int id, String expertise, Date start, Date end,
+	public Volunteer(int id, String expertise, Date start, Date end,
 			String location, User user) {
 		super();
 		this.id = id;
@@ -78,17 +80,13 @@ public class Tutor implements Serializable{
 		this.location = location;
 		this.user = user;
 	}
-	public Tutor() {
+	public Volunteer() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+    
+    
 	
 	
-	
-    
-    
-    
-    
 
-   
 }

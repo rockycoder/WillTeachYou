@@ -4,17 +4,9 @@
 <link rel="icon" type="image/png" href="">
 <head>
 <meta charset="utf-8">
-<meta name="language" content="English">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="msvalidate.01" content="D3C9DD460D13C3CFBB74E99AA16454D4" />
-<meta property="fb:page_id" content="1003965949635956">
-<meta name="twitter:app:country" content="in">
 <link rel="author"
 	href="https://plus.google.com/b/113296435567587038826/" />
-<meta name="google-site-verification"
-	content="XXEGnVEsFZEvOsZl0B75Lu3XGvOksJfgDII-q7dLWGQ" />
-<meta name="alexaVerifyID" content="ZNTKlVFd0bb4YKSOBLA8LJ9A7Qw" />
+
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
 	rel="stylesheet">

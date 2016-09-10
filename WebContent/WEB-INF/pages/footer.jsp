@@ -96,7 +96,7 @@
 						All Rights Reserved.
 					</p>
 				</div>-->
-				<%@ include file="applozic.jsp"%>
+<%-- 				<%@ include file="applozic.jsp"%> --%>
 			</div>
 		</div>
 	</div>

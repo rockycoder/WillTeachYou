@@ -7,13 +7,11 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import javax.transaction.Transactional;
 
-import org.apache.commons.collections.CollectionUtils;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.criterion.Projections;
-import org.hibernate.exception.ConstraintViolationException;
+
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 

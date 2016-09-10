@@ -33,7 +33,7 @@
 					<li class="padding-header-top"><a
 						href="<%=request.getContextPath()%>/Company">Companies</a></li>
 					<li class="padding-header-top"><a
-						href="<%=request.getContextPath()%>/Volunteers">Volunteers</a></li>
+						href="<%=request.getContextPath()%>/Volunteer">Volunteers</a></li>
 
 
 					<li class="padding-header-top"><a
