@@ -17,9 +17,7 @@
 				</button>
 				<div class="logo-header">
 					<a href="<%=request.getContextPath()%>/index" class="logotext"
-						style="color: white;"><img class="logoimage"
-						src="res/img/logo.png" alt="trykaro logo"
-						style="width: 50px; height: 50px;" />TryKaro</a>
+						style="color: white;">Will Teach You</a>
 				</div>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->

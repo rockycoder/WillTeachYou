@@ -42,18 +42,18 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img src="res/img/new-banner/Cosmetics_MainPage.jpg"
+					<img src="res/img/hack/EducationBanner1.jpg"
 						alt="Try Finest Perfumes with us">
 
 				</div>
 
 				<div class="item">
-					<img src="res/img/new-banner/new-perfume.jpg"
+					<img src="res/img/hack/EducationBanner3.jpg"
 						alt="TryKaro, New Way To Decide What To Shop">
 
 				</div>
 				<div class="item">
-					<img src="res/img/new-banner/Gadgets_MainPage.jpg"
+					<img src="res/img/hack/EducationBanner7.jpg"
 						alt="TryKaro, New Way To Decide What To Shop">
 
 				</div>

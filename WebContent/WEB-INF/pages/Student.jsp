@@ -1,7 +1,6 @@
 <%@ include file="headerfile.jsp"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
-<title>TryKaro-Beauty Store|Find and Try Samples of
-	Skincare,Makeup,Haircare,Fragrances and Perfumes For Men & Women</title>
+<title>Student</title>
 <meta name="title" content="Will Teach You">
 
 </head>

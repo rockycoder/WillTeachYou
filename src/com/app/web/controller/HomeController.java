@@ -141,6 +141,25 @@ public class HomeController
         }
     }
 
+    @RequestMapping( method = RequestMethod.GET, value = "/login" )
+    public String login( ModelMap model,
+            HttpServletRequest request,
+            HttpSession httpSession)
+    {
+        try
+        {
+            
+            return "login";
+        }
+        catch( Exception e )
+        {
+            log.error( e.getMessage() );
+            return "errorcode";
+        }
+    }
+    
+    
+
 
     
 }

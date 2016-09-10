@@ -82,13 +82,5 @@ public class Tutor implements Serializable{
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	
-    
-    
-    
-    
-
-   
+	   
 }
