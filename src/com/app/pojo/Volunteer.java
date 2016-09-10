@@ -20,8 +20,6 @@ public class Volunteer implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
-
 	private int id;
     private String expertise;
     private Date start;
@@ -70,8 +68,7 @@ public class Volunteer implements Serializable {
 	public void setUser(User user) {
 		this.user = user;
 	}
-	public Volunteer(int id, String expertise, Date start, Date end,
-			String location, User user) {
+	public Volunteer(int id, String expertise, Date start, Date end, String location, User user) {
 		super();
 		this.id = id;
 		this.expertise = expertise;
@@ -80,6 +77,7 @@ public class Volunteer implements Serializable {
 		this.location = location;
 		this.user = user;
 	}
+
 	public Volunteer() {
 		super();
 		// TODO Auto-generated constructor stub

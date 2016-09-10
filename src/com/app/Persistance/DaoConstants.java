@@ -1,4 +1,4 @@
-package com.app.Persistance;
+package com.app.persistance;
 
 public class DaoConstants {
 

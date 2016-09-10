@@ -1,5 +1,9 @@
 package com.app.pojo;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -106,4 +110,48 @@ public class Company implements Serializable {
 		this.capacity = capacity;
 	}
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Company company = (Company) o;
+
+        return new EqualsBuilder()
+                .append(id, company.id)
+                .append(expertise, company.expertise)
+                .append(start, company.start)
+                .append(end, company.end)
+                .append(location, company.location)
+                .append(user, company.user)
+                .append(capacity, company.capacity)
+                .isEquals();
+    }
+
+    @Override
+    public int hashCode() {
+        return new HashCodeBuilder(17, 37)
+                .append(id)
+                .append(expertise)
+                .append(start)
+                .append(end)
+                .append(location)
+                .append(user)
+                .append(capacity)
+                .toHashCode();
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this)
+                .append("id", id)
+                .append("expertise", expertise)
+                .append("start", start)
+                .append("end", end)
+                .append("location", location)
+                .append("user", user)
+                .append("capacity", capacity)
+                .toString();
+    }
 }
