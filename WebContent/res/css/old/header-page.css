@@ -1,0 +1,518 @@
+html, body{
+		margin: 0;
+		padding: 0;
+	}
+.page-wrapper{
+		font-family: 'Open Sans', sans-serif;
+	    /*margin-bottom: 60px;*/
+	}
+.nav-main{
+		background: #000;
+		border-radius: 0 !important;
+		margin: 0;
+	}
+
+ul.nav li a{
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+ul.nav li a:hover{
+		background: none;
+		color: #bbb;
+	}
+.navbar-toggle .icon-bar{
+		background: #fff;
+	}
+
+section.index-page{
+		min-height: 100%;
+		height: 720px;
+		background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(../../res/img/front-image.jpg);
+		background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../../res/img/front-image.jpg);
+		background-size: cover;
+	}
+
+	.front-container .content{
+		padding-top: 25%;
+		text-align: center;
+	}
+	.content h1{
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 44px;
+	}
+	.content .down-arrow{
+		text-align: center;
+		font-size: 32px;
+		color: #fff;
+	}
+	.start-button{
+		background: #1abc9c;
+		color: #fff;
+		font-size: 20px;
+		padding: 5px 10px;
+	    display: inline-block;
+	    border-radius: 2px;
+	}
+
+	.steps-wrapper{
+		padding: 10px 0 30px 0;
+	}
+<!--about us css-->
+section.features{
+		height: 480px;
+		min-height: 480px;
+	}
+
+
+
+	section.reach-new-customers{
+		background: -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_reach_new_consumers-659fd01d1b0ea1c392078a547719b989.jpg) no-repeat center center;
+		background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_reach_new_consumers-659fd01d1b0ea1c392078a547719b989.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+
+	section.influence{
+		background: -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_influence-1156efef97afc5c886e8d62b8373d77c.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_influence-1156efef97afc5c886e8d62b8373d77c.jpg) no-repeat center center;
+
+		background-size: cover;
+	}
+
+
+	section.encourage{
+		background: -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_encourage-712fd6d2fb0c6d014f2ee6bec12e1b13.jpg) no-repeat center center;
+		background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_encourage-712fd6d2fb0c6d014f2ee6bec12e1b13.jpg) no-repeat center center;
+
+		background-size: cover;
+	}
+
+
+	section.drive{
+		background: -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_drive-f946b906de3ccf6a59598a6decf52b73.jpg) no-repeat center center;
+		background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_drive-f946b906de3ccf6a59598a6decf52b73.jpg) no-repeat center center;
+
+		background-size: cover;
+	}
+
+	section .content{
+		padding: 20% 0 0 0;
+		color: #fff;
+		text-align: center;
+	}
+
+	section .content h1{
+
+		text-transform: uppercase;
+	}
+
+
+
+
+
+	section .content p{
+		font-size: 18px;
+	}
+
+
+
+	section.our-reach{
+		height: 400px;
+		min-height: 400px;
+		text-align: center;
+
+		padding: 20px 0;
+	}
+
+
+
+
+
+	.our-reach .head, .learn-more .head{
+		color: #00a8b0;
+		font-weight: 600;
+		font-size: 40px;
+		padding: 40px; 
+		text-transform: uppercase;
+		text-align: center;
+
+	}
+
+
+	.our-reach .circle{
+		height: 240px;
+		width: 240px;
+		border-radius: 50%;
+		background: #00a8b0;
+		color: #fff;
+		margin: auto;
+	}
+	.circle h2{
+		font-size: 80px;
+		padding-top: 40px;
+		margin: 0;
+	}
+	.circle p{
+		text-transform: uppercase;
+		font-size: 22px;
+	    padding: 0 20px;
+	}
+
+
+	section.learn-more{
+	    padding: 20px 0 40px;
+	}
+
+	.learn-more .pm-mac img{
+		width: 650px;	
+	}
+	.brands-list{
+		padding-top: 40px;
+	}
+	.brands-list ul li{
+		font-size: 16px;
+		color: #666;
+		margin-bottom: 30px;
+	}
+
+	section.brand-features{
+		background: #00a8b0;
+		color: #fff;
+		text-align: center;
+		padding: 40px;
+	}
+	.brand-features h3{
+		margin: 10px 0;
+		text-transform: uppercase;
+	}
+	.step-wrapper{
+		position: relative;
+		text-align: center;
+	}
+
+	.step-wrapper .step{
+		background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),url();
+		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(../../res/img/img-deliver1.gif);
+		min-height: 260px;
+		background-size: cover;
+	}
+	.step-wrapper .step1{
+		background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),url();
+		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(../../res/img/img-join.gif);
+		min-height: 260px;
+		background-size: cover;
+	}
+	.step-wrapper .step2{
+		background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),url();
+		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(../../res/img/img-trial.gif);
+		min-height: 260px;
+		background-size: cover;
+	}
+	.step .content{
+		color: #fff;
+		text-align: center;
+	}
+	.step .content h1{
+		padding: 60px 0 0 0;
+	}
+	.step-wrapper p.step-description{
+		color: #444;
+		text-align: center;
+		padding: 5px 15px;
+		font-size: 16px;
+	}
+	.benefits-wrapper{
+		background: #1ABC9C;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 40px 0;
+	}
+	.benefits-header{
+		font-size: 32px;
+		color: #fff;
+		font-weight: 700;
+		text-align: center;
+	    padding-bottom: 40px;
+	}
+	.benefit i{
+		color: #fff;
+	}
+
+	.benefit h3{
+		color: #fff;
+	}
+
+	@media only screen and (max-width : 768px) {
+		.step-wrapper p.step-description{
+			position: absolute;
+			bottom: 20px;
+			color: #fff;
+		}
+		.steps-container, .step-wrapper{
+			padding: 0;
+		}
+	}
+
+
+/* ----- about us css---*/
+
+section.aboutus{
+		min-height: 100%;
+		height: 720px;
+		background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(../../res/img/img-about.jpg);
+		background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../../res/img/img-about.jpg);
+		background-size: cover;
+	}
+section.features{
+		height: 480px;
+		min-height: 480px;
+	}
+
+
+
+	section.reach-new-customers{
+		background: -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_reach_new_consumers-659fd01d1b0ea1c392078a547719b989.jpg) no-repeat center center;
+		background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_reach_new_consumers-659fd01d1b0ea1c392078a547719b989.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+
+	section.influence{
+		background: -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_influence-1156efef97afc5c886e8d62b8373d77c.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_influence-1156efef97afc5c886e8d62b8373d77c.jpg) no-repeat center center;
+
+		background-size: cover;
+	}
+
+
+	section.encourage{
+		background: -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_encourage-712fd6d2fb0c6d014f2ee6bec12e1b13.jpg) no-repeat center center;
+		background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_encourage-712fd6d2fb0c6d014f2ee6bec12e1b13.jpg) no-repeat center center;
+
+		background-size: cover;
+	}
+
+
+	section.drive{
+		background: -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_drive-f946b906de3ccf6a59598a6decf52b73.jpg) no-repeat center center;
+		background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(https://dgedexjhodw87.cloudfront.net/assets/landing/brands_drive-f946b906de3ccf6a59598a6decf52b73.jpg) no-repeat center center;
+
+		background-size: cover;
+	}
+
+	section .content{
+		padding: 20% 0 0 0;
+		color: #fff;
+		text-align: center;
+	}
+
+	section .content h1{
+
+		text-transform: uppercase;
+	}
+
+
+
+
+
+	section .content p{
+		font-size: 18px;
+	}
+
+
+
+	section.our-reach{
+		height: 400px;
+		min-height: 400px;
+		text-align: center;
+
+		padding: 20px 0;
+	}
+
+
+
+
+
+	.our-reach .head, .learn-more .head{
+		color: #00a8b0;
+		font-weight: 600;
+		font-size: 40px;
+		padding: 40px; 
+		text-transform: uppercase;
+		text-align: center;
+
+	}
+
+
+	.our-reach .circle{
+		height: 240px;
+		width: 240px;
+		border-radius: 50%;
+		background: #00a8b0;
+		color: #fff;
+		margin: auto;
+	}
+	.circle h2{
+		font-size: 80px;
+		padding-top: 40px;
+		margin: 0;
+	}
+	.circle p{
+		text-transform: uppercase;
+		font-size: 22px;
+	    padding: 0 20px;
+	}
+
+
+	section.learn-more{
+	    padding: 20px 0 40px;
+	}
+
+	.learn-more .pm-mac img{
+		width: 650px;	
+	}
+	.brands-list{
+		padding-top: 40px;
+	}
+	.brands-list ul li{
+		font-size: 16px;
+		color: #666;
+		margin-bottom: 30px;
+	}
+
+	section.brand-features{
+		background: #00a8b0;
+		color: #fff;
+		text-align: center;
+		padding: 40px;
+	}
+	.brand-features h3{
+		margin: 10px 0;
+		text-transform: uppercase;
+	}
+
+	@media only screen and (max-width : 768px) {
+
+  }
+/* ----- about us end css---*/
+
+/*----how it works css start--*/
+
+  .howitworks .content .down-arrow{
+	padding-top: 110px;
+	}
+	section.howitworks{
+		min-height: 100%;
+		height: 720px;
+		background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(../../res/img/img-works.jpg);
+		background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../../res/img/img-works.jpg);
+		background-size: cover;
+	}
+	section.get-to-know .head{
+		color: #00a8b0;
+		text-transform: uppercase;
+		text-align: center;
+		padding-top: 15px;
+	}
+	section.get-to-know .head h1{
+		font-weight: 700;
+	}
+	section.get-to-know .head p
+	{
+	    font-size: 18px;
+		text-transform: none;
+		color: #444;
+	}
+
+	section.you-chose{
+		min-height: 320px;
+		background: #fffff;
+		text-align: center;
+		color: #fff;
+		margin: 20px 0;
+	}				
+	section.you-chose h1{
+		color: #00a8b0;
+		text-transform: uppercase;
+		font-weight: 600;
+	    padding: 10% 20% 0 20%;
+	}
+	section.you-chose p
+	{    color: black;
+   
+   		font-size: 18px;
+		text-transform: none;
+		padding: 0 20%;
+	}
+
+	.samples-wrapper .sample{
+		height: 200px;
+		max-height: 200px;
+		background-size: cover !important;
+	}
+	.text-samples-try{
+		background: #00a8b0;
+		color: #fff;
+		text-align: center;
+		height: 95px;
+		max-height: 95px;
+	}
+	.text-samples-try h1{
+		margin: 0;
+		margin-top: 10px;
+	    line-height: 2.5;
+	}
+
+	.samples-wrapper .sample1{
+		background: url()no-repeat center center;
+		height: 95px;
+		max-height: 95px;
+	}
+	.samples-wrapper .sample2{
+		background: url(../../res/img/img-productad.png)no-repeat center center;
+	}
+	.samples-wrapper .sample3
+	{
+		background: url(../../res/img/img-productad5.jpg)no-repeat center center;
+	}
+	.samples-wrapper .sample4
+	{
+		background: url(../../res/img/img-productad4.jpg)no-repeat center center;
+	}
+	.samples-wrapper .sample5{
+		background: url(../../res/img/img-productad2.jpg)no-repeat center center;
+	}
+
+	.samples-container.container .col-sm-6,
+	.samples-container.container .col-sm-4{
+		padding: 5px;
+	}
+	.join-trykaro{
+		text-align: center;
+		padding: 80px 0;
+	}
+	.join-button{
+		background: #1abc9c;
+		color: #fff;
+		font-size: 20px;
+		padding: 5px 15px;
+	    display: inline-block;
+	    border-radius: 2px;
+	    cursor: pointer;
+	}
+/*----how it works css ends---*/
+
+/*----contact us css---*/
+section.contactus{
+		min-height: 100%;
+		height: 720px;
+		background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(../../res/img/img-contact.jpg);
+		background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../../res/img/img-contact.jpg);
+		background-size: cover;
+	}
+	
+/*----contact us css ends---*/
+

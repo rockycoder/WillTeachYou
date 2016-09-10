@@ -1,0 +1,212 @@
+DROP TABLE IF EXISTS address_book;
+CREATE TABLE address_book (
+   
+   address_book_id SERIAL,
+   --customers_id INTEGER NOT NULL references Customers(customers_id),
+   --vendors_id INTEGER NOT NULL references Vendors(vendors_id),
+   -- entry_gender char(1) NOT NULL,
+   -- entry_company VARCHAR(32),
+   customers_id INTEGER NOT NULL,
+   vendors_id INTEGER NOT NULL,
+   entry_firstname VARCHAR(32) NOT NULL,
+   entry_lastname VARCHAR(32) NOT NULL,
+   entry_street_address VARCHAR(64) NOT NULL,
+   entry_suburb VARCHAR(32),
+   entry_postcode VARCHAR(10) NOT NULL,
+   entry_city VARCHAR(32) NOT NULL,
+   entry_state VARCHAR(32),
+   --entry_country_id INTEGER DEFAULT '0' NOT NULL,
+   entry_zone_id INTEGER DEFAULT '0' NOT NULL,
+   PRIMARY KEY (address_book_id)
+);
+--CREATE INDEX idx_address_book_customers_id ON address_book (customers_id);
+
+
+DROP TABLE IF EXISTS categories;
+CREATE TABLE categories (
+   categories_id SERIAL,
+   categories_image VARCHAR(64),
+   --sort_order INTEGER,
+   date_added TIMESTAMP,
+   last_modified TIMESTAMP,
+   PRIMARY KEY (categories_id)
+);
+
+
+DROP TABLE IF EXISTS categories_description;
+CREATE TABLE categories_description (
+   categories_id INTEGER DEFAULT '0' NOT NULL,
+   language_id INTEGER DEFAULT '1' NOT NULL,
+   categories_name VARCHAR(32) NOT NULL,
+   PRIMARY KEY (categories_id, language_id)
+);
+--CREATE INDEX idx_categories_name ON categories_description (categories_name);
+
+DROP TABLE IF EXISTS configuration;
+CREATE TABLE configuration (
+  configuration_id SERIAL,
+  configuration_title VARCHAR(64) NOT NULL,
+  configuration_key VARCHAR(64) NOT NULL,
+  configuration_value VARCHAR(255) NOT NULL,
+  configuration_description VARCHAR(255) NOT NULL,
+  configuration_group_id INTEGER NOT NULL,
+  --sort_order INTEGER NULL,
+  last_modified TIMESTAMP NULL,
+  date_added TIMESTAMP NOT NULL,
+  use_function VARCHAR(255) NULL,
+  set_function VARCHAR(255) NULL,
+  PRIMARY KEY (configuration_id)
+);
+
+DROP TABLE IF EXISTS customers;
+CREATE TABLE customers (
+   customers_id SERIAL,
+   --address_book_id INTEGER NOT NULL references Address_book(address_book_id),
+   --order_id INTEGER NOT NULL references Orders(order_id),
+   --customers_basket_id INTEGER NOT NULL references customers_basket(customers_basket_id),
+   address_book_id INTEGER NOT NULL,
+   orders_id INTEGER NOT NULL,
+   customers_basket_id INTEGER NOT NULL,
+   customers_gender char(1) NOT NULL,
+   customers_firstname VARCHAR(32) NOT NULL,
+   customers_lastname VARCHAR(32) NOT NULL,
+   customers_dob TIMESTAMP  NOT NULL,
+   customers_email_address VARCHAR(96) NOT NULL,
+   customers_default_address_id INTEGER NOT NULL,
+   customers_telephone VARCHAR(32) NOT NULL,
+   --customers_fax VARCHAR(32),
+   customers_password VARCHAR(40) NOT NULL,
+   --customers_newsletter char(1),
+   PRIMARY KEY (customers_id)
+);
+
+DROP TABLE IF EXISTS customers_basket;
+CREATE TABLE customers_basket (
+  customers_basket_id SERIAL,
+  -- customers_id INTEGER NOT NULL references customers(customers_id) ,
+  customers_id INTEGER NOT NULL,
+  products_id VARCHAR(255) NOT NULL,
+  customers_basket_quantity INTEGER NOT NULL,
+  final_price decimal(15,4) NOT NULL,
+  customers_basket_date_added char(8),
+  PRIMARY KEY (customers_basket_id)
+);
+
+DROP TABLE IF EXISTS Vendors;
+CREATE TABLE Vendors (
+  Vendors_id SERIAL,
+  -- address_book_id INTEGER NOT NULL references Address_book(address_book_id),
+  address_book_id INTEGER NOT NULL,
+  Vendors_name VARCHAR(32) NOT NULL,
+  Vendors_image VARCHAR(64),
+  date_added TIMESTAMP NULL,
+  last_modified TIMESTAMP NULL,
+  PRIMARY KEY (Vendors_id)
+);
+
+
+DROP TABLE IF EXISTS manufacturers_info;
+CREATE TABLE Vendors_info (
+  Vendors_id INTEGER NOT NULL,
+  Vendors_url VARCHAR(255) NOT NULL,
+  url_clicked INTEGER NOT NULL default '0',
+  date_last_click TIMESTAMP NULL,
+  PRIMARY KEY (Vendors_id)
+);
+
+DROP TABLE IF EXISTS orders;
+CREATE TABLE orders (
+  orders_id SERIAL,
+  customers_id INTEGER NOT NULL,
+   
+   payment_method VARCHAR(32) NOT NULL,
+  
+  last_modified TIMESTAMP,
+  date_purchased TIMESTAMP,
+  orders_status INTEGER NOT NULL,
+  orders_date_finished TIMESTAMP,
+  PRIMARY KEY (orders_id)
+);
+
+DROP TABLE IF EXISTS orders_products;
+CREATE TABLE orders_products (
+  orders_products_id SERIAL,
+  -- order_id INTEGER NOT NULL references Orders(order_id),
+  -- products_id INTEGER NOT NULL references products(products_id),
+  orders_id INTEGER NOT NULL,
+  products_id INTEGER NOT NULL,
+  PRIMARY KEY (orders_products_id)
+);
+
+
+
+DROP TABLE IF EXISTS products;
+CREATE TABLE products (
+  -- categories_id INTEGER NOT NULL references  Categories(categories_id)
+  categories_id INTEGER NOT NULL,
+  products_id SERIAL,
+  products_quantity INTEGER NOT NULL,
+  products_model VARCHAR(12),
+  products_image VARCHAR(64),
+  products_price decimal(15,4) NOT NULL,
+  products_date_added TIMESTAMP NOT NULL,
+  products_last_modified TIMESTAMP,
+  products_date_available TIMESTAMP,
+  products_weight decimal(5,2) NOT NULL,
+  products_status INTEGER NOT NULL,
+  products_url VARCHAR(255) default NULL,
+  products_viewed INTEGER default '0',
+  manufacturers_id INTEGER NULL,
+  products_ordered INTEGER NOT NULL default '0',
+  PRIMARY KEY (products_id)
+);
+
+--CREATE INDEX idx_products_date_added ON products (products_date_adde
+
+DROP TABLE IF EXISTS products_vendors;
+CREATE TABLE products_vendors(
+  products_vendors_id SERIAL,
+  --vendors_id INTEGER NOT NULL references vendors(vendors_id),
+  --products_id INTEGER NOT NULL references products(products_id),
+  vendors_id INTEGER NOT NULL ,
+  products_id INTEGER NOT NULL,
+  PRIMARY KEY (products_vendors_id)
+);
+DROP TABLE IF EXISTS reviews;
+CREATE TABLE reviews (
+  reviews_id SERIAL,
+  --customers_id INTEGER NOT NULL references Customers(customers_id),
+  --products_id INTEGER NOT NULL references products(products_id),
+  customers_id INTEGER NOT NULL,
+  products_id INTEGER NOT NULL ,
+  reviews_rating INTEGER,
+  review_text TEXT,
+  date_added TIMESTAMP,
+  last_modified TIMESTAMP,
+  reviews_read INTEGER NOT NULL default '0',
+  PRIMARY KEY (reviews_id)
+);
+
+
+DROP TABLE IF EXISTS specials;
+CREATE TABLE specials (
+  specials_id SERIAL,
+  products_id INTEGER NOT NULL,
+  specials_new_products_price decimal(15,4) NOT NULL,
+  specials_date_added TIMESTAMP,
+  specials_last_modified TIMESTAMP,
+  expires_date TIMESTAMP,
+  date_status_change TIMESTAMP,
+  status INTEGER NOT NULL DEFAULT '1',
+  PRIMARY KEY (specials_id)
+);
+
+DROP TABLE IF EXISTS geo_zones;
+CREATE TABLE geo_zones (
+  geo_zone_id SERIAL,
+  geo_zone_name VARCHAR(32) NOT NULL,
+  geo_zone_description VARCHAR(255) NOT NULL,
+  last_modified TIMESTAMP NULL,
+  date_added TIMESTAMP NOT NULL,
+  PRIMARY KEY (geo_zone_id)
+);

@@ -1,0 +1,130 @@
+html, body{
+		margin: 0;
+		padding: 0;
+	}
+.page-wrapper{
+		font-family: 'Open Sans', sans-serif;
+	    margin-bottom: 60px;
+	    background-color: white;
+	}
+.nav-main{
+		background: #000;
+		border-radius: 0 !important;
+		margin: 0;
+	}
+
+ul.nav li a{
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+ul.nav li a:hover{
+		background: none;
+		color: #bbb;
+	}
+.navbar-toggle .icon-bar{
+		background: #fff;
+	}
+
+section.front{
+		min-height: 100%;
+		height: 720px;
+		background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(../../res/img/img-contact.jpg);
+		background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../../res/img/img-contact.jpg);
+		background-size: cover;
+	}
+	.front-container .content{
+		padding-top: 25%;
+		text-align: center;
+	}
+	.content h1{
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 44px;
+	}
+	.content .down-arrow{
+		text-align: center;
+		font-size: 32px;
+		color: #fff;
+	}
+	.start-button{
+		background: #1abc9c;
+		color: #fff;
+		font-size: 20px;
+		padding: 5px 10px;
+	    display: inline-block;
+	    border-radius: 2px;
+	}
+
+	.steps-wrapper{
+		padding: 10px 0 30px 0;
+	}
+
+	.step-wrapper{
+		position: relative;
+		text-align: center;
+	}
+
+	.step-wrapper .step{
+		background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),url();
+		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(../../res/img/img-deliver1.gif);
+		min-height: 260px;
+		background-size: cover;
+	}
+	.step-wrapper .step1{
+		background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),url();
+		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(../../res/img/img-join.gif);
+		min-height: 260px;
+		background-size: cover;
+	}
+	.step-wrapper .step2{
+		background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),url();
+		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(../../res/img//img-trial.gif);
+		min-height: 260px;
+		background-size: cover;
+	}
+	.step .content{
+		color: #fff;
+		text-align: center;
+	}
+	.step .content h1{
+		padding: 60px 0 0 0;
+	}
+	.step-wrapper p.step-description{
+		color: #444;
+		text-align: center;
+		padding: 5px 15px;
+		font-size: 16px;
+	}
+	.benefits-wrapper{
+		background: #1ABC9C;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 40px 0;
+	}
+	.benefits-header{
+		font-size: 32px;
+		color: #fff;
+		font-weight: 700;
+		text-align: center;
+	    padding-bottom: 40px;
+	}
+	.benefit i{
+		color: #fff;
+	}
+
+	.benefit h3{
+		color: #fff;
+	}
+
+	@media only screen and (max-width : 768px) {
+		.step-wrapper p.step-description{
+			position: absolute;
+			bottom: 20px;
+			color: #fff;
+		}
+		.steps-container, .step-wrapper{
+			padding: 0;
+		}
+	}
