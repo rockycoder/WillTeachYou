@@ -16,123 +16,115 @@ import javax.persistence.Table;
 @Table(name = "User")
 public class User implements Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	private int id;
-	private String email;
-	private String mobile;
-	private String password;
-	private String name;
-	private int age;
-	private List<Tutor> tutors;
-	private List<Company> companies;
-	private List<Volunteer> volunteers;
-	private List<Student> students;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+    private int id;
+    private String email;
+    private String mobile;
+    private String password;
+    private String name;
+    private int age;
+    private List<Company> companies;
+    private List<Volunteer> volunteers;
+    private List<Student> students;
 
-	public User() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	@Id
-    @GeneratedValue( strategy = GenerationType.AUTO )
-	public int getId() {
-		return id;
-	}
+    public User() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public int getId() {
+        return id;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public String getMobile() {
-		return mobile;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
-	}
+    public String getMobile() {
+        return mobile;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	@OneToMany(mappedBy="user", fetch=FetchType.LAZY)
-	public List<Tutor> getTutors() {
-		return tutors;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	public void setTutors(List<Tutor> tutors) {
-		this.tutors = tutors;
-	}
-	@OneToMany(mappedBy="user", fetch=FetchType.LAZY)
-	public List<Company> getCompanies() {
-		return companies;
-	}
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    public List<Company> getCompanies() {
+        return companies;
+    }
 
-	public void setCompanies(List<Company> companies) {
-		this.companies = companies;
-	}
-	@OneToMany(mappedBy="user", fetch=FetchType.LAZY)
-	public List<Volunteer> getVolunteers() {
-		return volunteers;
-	}
+    public void setCompanies(List<Company> companies) {
+        this.companies = companies;
+    }
 
-	public void setVolunteers(List<Volunteer> volunteers) {
-		this.volunteers = volunteers;
-	}
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    public List<Volunteer> getVolunteers() {
+        return volunteers;
+    }
 
-	@OneToMany(mappedBy="user", fetch=FetchType.LAZY)
-	public List<Student> getStudents() {
-		return students;
-	}
+    public void setVolunteers(List<Volunteer> volunteers) {
+        this.volunteers = volunteers;
+    }
 
-	public void setStudents(List<Student> students) {
-		this.students = students;
-	}
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    public List<Student> getStudents() {
+        return students;
+    }
 
-	public User(int id, String email, String mobile, String password,
-			String name, int age, List<Tutor> tutors, List<Company> companies,
-			List<Volunteer> volunteers, List<Student> students) {
-		super();
-		this.id = id;
-		this.email = email;
-		this.mobile = mobile;
-		this.password = password;
-		this.name = name;
-		this.age = age;
-		this.tutors = tutors;
-		this.companies = companies;
-		this.volunteers = volunteers;
-		this.students = students;
-	}
+    public void setStudents(List<Student> students) {
+        this.students = students;
+    }
+
+    public User(int id, String email, String mobile, String password,
+                String name, int age, List<Company> companies,
+                List<Volunteer> volunteers, List<Student> students) {
+        super();
+        this.id = id;
+        this.email = email;
+        this.mobile = mobile;
+        this.password = password;
+        this.name = name;
+        this.age = age;
+        this.companies = companies;
+        this.volunteers = volunteers;
+        this.students = students;
+    }
 
 }
