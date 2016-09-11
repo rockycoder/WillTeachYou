@@ -56,26 +56,6 @@
 		</property>
 	</bean>
 
-    <bean id="autoMail" class="com.app.Utils.AutoEmail">
-		<property name="mailSender" ref="mailSender" />
-	</bean>
-
-    <!-- Mail bean and setting -->
-	<bean id="mailService" class="com.app.mail.MailService">
-		<property name="props">
-			<props>
-				<prop key="mail.smtp.host">${mail.smtp.host}</prop>
-				<prop key="mail.smtp.socketFactory.port">${mail.smtp.socketFactory.port}</prop>
-				<prop key="mail.smtp.socketFactory.class">${mail.smtp.socketFactory.class}</prop>
-				<prop key="mail.smtp.auth">${mail.smtp.auth}</prop>
-				<prop key="mail.smtp.starttls.enable">${mail.smtp.starttls.enable}</prop>
-				<prop key="FromAddress">${FromAddress}</prop>
-				<prop key="FromPassword">${FromPassword}</prop>
-			</props>
-		</property>
-	</bean>
-
-    <bean id="mailMessageBuilder" class="com.app.mail.MailMessageBuilder" />
 
     <bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -106,7 +86,7 @@
 				<value>com.app.pojo.Student</value>
 				<value>com.app.pojo.Volunteer</value>
 				<value>com.app.pojo.User</value>
-				<value>com.app.pojo.RequestType</value>
+				<!-- <value>com.app.pojo.RequestType</value> -->
 			</list>
 		</property>
 	</bean>

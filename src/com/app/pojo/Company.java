@@ -13,6 +13,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -20,9 +21,6 @@ import javax.persistence.Table;
 @Table(name = "Company")
 public class Company implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private int id;
@@ -80,10 +78,13 @@ public class Company implements Serializable {
 		this.location = location;
 	}
 
-	@ManyToOne( fetch = FetchType.LAZY, cascade = CascadeType.ALL )
-	public User getUser() {
-		return user;
-	}
+    @ManyToOne( fetch = javax.persistence.FetchType.LAZY )
+    @JoinColumn( name = "user_fk", nullable = true, unique = false )
+    public User getUser()
+    {
+        return user;
+    }
+
 
 	public void setUser(User user) {
 		this.user = user;

@@ -4,11 +4,14 @@ import java.util.List;
 
 import com.app.persistance.Filter;
 import com.app.pojo.RequestType;
+import com.app.pojo.Student;
 import com.app.pojo.Topic;
+
 import org.omg.CORBA.Request;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
 
 public interface ICustomerService {
 
@@ -24,6 +27,7 @@ public interface ICustomerService {
 
     UserDetails loadUserByCustomername(Integer id) throws UsernameNotFoundException;
 
+    List<Student> getStudentAttendingList(String s);
     List<RequestType> getVolunteerRequestList(List<Topic> topics);
 
 }

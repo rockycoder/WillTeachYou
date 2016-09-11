@@ -50,7 +50,10 @@ public class ServiceImpl implements ICustomerService {
 
     @Override
     public List<RequestType> getVolunteerRequestList(List<Topic> topics) {
-        // TODO Auto-generated method stub
+/*        topics.stream().forEach(topic -> {
+        	if(topic exists )
+        });*/
+    	
         return null;
     }
 }

@@ -1,7 +1,10 @@
 package com.app.web.controller;
 
+import java.util.ArrayList;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,6 +13,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
+
 import com.app.web.ServiceApi.ICustomerService;
 
 @Controller
@@ -81,7 +85,7 @@ public class HomeController {
         }
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/student/request")
+    @RequestMapping(method = RequestMethod.GET, value = "/request")
     public String createRequest(ModelMap model, HttpServletRequest request, HttpSession httpSession) {
         try {
             return "CreateRequest";
@@ -91,13 +95,26 @@ public class HomeController {
         }
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/volunteer/accept")
+    @RequestMapping(method = RequestMethod.GET, value = "/accept")
     public String acceptRequest(ModelMap model, HttpServletRequest request, HttpSession httpSession) {
         try {
+        	ArrayList<String> list = new ArrayList<String>();
+        	list.add("Basic Computer Training");
+        	list.add("Java");
+        	list.add("C");
+        	list.add("Maths");
+        	list.add("Chemistry");
+        	list.add("Physics");
+        	list.add("English");
+        	
+        	model.addAttribute("list", list);
             return "AcceptRequest";
         } catch (Exception e) {
             log.error(e.getMessage());
             return "ErrorCode";
         }
     }
+
+    
+    
 }

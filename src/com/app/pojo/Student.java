@@ -9,6 +9,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -70,7 +71,8 @@ public class Student implements Serializable {
 		this.location = location;
 	}
 
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToOne( fetch = javax.persistence.FetchType.LAZY )
+    @JoinColumn( name = "user_fk", nullable = true, unique = false )
 	public User getUser() {
 		return user;
 	}

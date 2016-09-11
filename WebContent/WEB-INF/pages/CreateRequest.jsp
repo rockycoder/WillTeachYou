@@ -33,16 +33,20 @@
 
 		<form id="form_1156262" class="appnitro" method="post" action="">
 			<div class="form_description">
-				<h2>Untitled Form</h2>
-				<p>This is your form description. Click here to edit.</p>
+				<h2>Learner Course Selection Form</h2>
+				<p>You can select your topic of interest , Location where you
+					want to study and The Time.</p>
 			</div>
 			<ul>
 
 				<li id="li_1"><label class="description" for="element_1">Topics</label>
 					<div>
 						<select class="element select medium" id="element_1"
-							name="element_1">
+							name="element_1" onchange="selectLocation(this);">
 							<option value="" selected="selected"></option>
+							<c:forEach var="item" items="${list}">
+								<option value="${item}" selected="${item}"></option>
+							</c:forEach>
 
 
 						</select>
@@ -50,7 +54,7 @@
 				<li id="li_2"><label class="description" for="element_2">Location</label>
 					<div>
 						<select class="element select medium" id="element_2"
-							name="element_2">
+							name="element_2" disabled=disabled>
 							<option value="" selected="selected"></option>
 
 
@@ -59,7 +63,7 @@
 				<li id="li_3"><label class="description" for="element_3">Time</label>
 					<div>
 						<select class="element select medium" id="element_3"
-							name="element_3">
+							name="element_3" disabled=disabled>
 							<option value="" selected="selected"></option>
 
 
